@@ -1,0 +1,492 @@
+@charset "utf-8";
+
+/***** 기본 모바일 (375px 기준) *****/
+
+body {
+    font-family:'Noto Sans KR R', 'Noto Sans KR M', 'Noto Sans KR B', 'Noto Sans', 'Noto Sans Bold', 'Baloo2 Bold', 'Montserrat M', 'Montserrat B', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;
+    color:#222;
+}
+.container { 
+    overflow:hidden;
+    -webkit-tap-highlight-color:transparent;
+}
+.container ul { list-style:none; margin:0; padding:0; }
+.container a { display:block; text-decoration:none; color:#222; }
+.container h2 {
+    text-transform:uppercase;
+    text-align:center;
+    font-family:'Montserrat B';
+    font-size:30px;
+    margin:120px 0 80px 0;
+}
+
+/*** header ***/
+.container > header {
+    width:100%; height:70px;
+    border-bottom:1px solid #ddd;
+    background-color:#fff;
+    position:fixed; 
+    top:0; left:0;
+    z-index:999;
+}
+.container > header > h1 {
+    width:120px;
+    margin:15px 0 0 15px;
+}
+.container > header > img { display:block; }
+.container > header > a { padding:10px; }
+.container > header > h2 {
+    position:absolute; 
+    top:20px; right:30px;
+    margin:0;
+}
+
+/* nav */
+.container > header > .gnb {
+    width:100%; 
+    position:absolute;
+    top:71px;
+    padding:10px 0;
+    display:none;
+    background-color:#fff;
+}
+.container > header >.gnb li {
+    padding:15px 0 20px 20px;
+}
+.container > header > .gnb li a {
+    font-family:'Montserrat B';
+    text-transform:uppercase;
+    font-size:13px;
+}
+.container > header > .gnb li a:active {
+    color:#bbdae4;
+}
+
+/*** main  ***/
+
+/* mainimage1 */
+.container > .mainimg  {
+    height:725px; margin-top:71px;
+    background:url(images/main1_m.jpg) no-repeat;
+    position:relative;
+}
+.container > .mainimg h3 {
+    position:absolute;
+    top:200px; left:40px;
+    font-family:'Montserrat B';
+    text-transform:capitalize;
+    font-size:35px;
+}
+.container > .mainimg > p {
+    position:absolute;
+    top:350px; left:40px;
+    margin:0;
+    font-family:'Montserrat M';
+    font-size:13px;
+    color:#999;
+}
+.container > .mainimg > .btn {
+    position:absolute;
+    top:420px; left:40px;
+    width:157px; height:60px;
+    border-radius:28px;
+    background-color:#222;
+}
+.container > .mainimg > .btn a {
+    text-transform:capitalize;
+    line-height:60px;
+    border-radius:28px;
+    text-align:center;
+    color:#fff;
+}
+
+
+/* board */
+.container > .board {
+    display:flex;
+    flex-wrap:wrap; justify-content:center;
+}
+.container > .board .title {
+    font-family:'Montserrat B';
+    text-transform:uppercase;
+    font-size:25px;
+    line-height:0.3;
+}
+.container > .board > div { width:92%; margin:50px 0; }
+.container > .board ul { text-indent:5px; margin:0; }
+.container > .board li {
+    font-size:13px;
+    line-height:0;
+    padding:30px 0; 
+    border-bottom:1px dashed #999; 
+}
+.container > .board li:last-child { border:none; }
+.container > .board > div span { 
+    text-transform:lowercase; 
+    font-size:20px; 
+    float:right;
+}
+.container > .board li span { 
+    font-size:inherit;
+    font-weight:bold;
+    float:right;
+}
+
+/* mainimage2 */
+.container > .mainimg2 {
+    height:730px;
+    background:url(images/main2_m.jpg) no-repeat;
+    position:relative;
+}
+.container > .mainimg2 > h3 {
+    position:absolute;
+    top:150px; left:40px;
+    width:200px;
+    font-size:35px;
+    font-family:'Noto Sans KR B';
+    line-height:1.5;
+}
+.container > .mainimg2 > h3 > span { font-family:'Baloo2 Bold'; }
+.container > .mainimg2 p { 
+    position:absolute;
+    width:220px;
+    top:350px; left:40px;
+    margin:20px 0;
+    color:#777;
+    font-size:13px;
+    line-height:1.7;
+}
+.container > .mainimg2 > .btn1 {
+    position:absolute;
+    top:540px; left:40px;
+    width:167px; height:54px;
+    border-radius:5px;
+    border:2px solid #222;
+}
+.container > .mainimg2 > .btn1 a {
+    display:block;
+    line-height:54px;
+    text-transform:capitalize;
+    text-align:center;
+    font-weight:bold;
+    color:#222;
+}
+
+
+/* shop */
+.container > .shop {
+    width:90%;
+    margin:0 auto;
+}
+.container > .shop > .best {
+    height:345px;
+    background:url(images/best_m.jpg) no-repeat;
+}
+.container > .shop > .sale img, 
+.container > .shop > .new img {
+    display:block;
+    width:100%; max-width:345px;
+}
+.container > .shop > .pro {
+    height:345px;
+    background:url(images/project_m.jpg) no-repeat;
+}
+.container .shop div { position:relative; margin:20px 0; }
+.container > .shop > .best > h3 {
+    font-family:'Montserrat M';
+    font-size:24px;
+    position:absolute;
+    top:80px; left:170px;
+}
+.container .shop .sale h3,
+.container .shop .new h3 {
+    font-family:'Montserrat M';
+    font-size:24px;
+    position:absolute;
+    top:202px; left:25px;
+}
+.container > .shop > .pro > h3 {
+    font-family:'Montserrat M';
+    font-size:1.5rem;
+    position:absolute;
+    top:66px; left:25px;
+}
+.container > .shop > .best a {
+    position:absolute;
+    top:150px; left:170px;
+}
+.container .shop .sale a,
+.container .shop .new a { 
+    position:absolute;
+    top:275px; left:25px;
+}
+.container > .shop > .pro a {
+    position:absolute;
+    top:137px; left:25px;
+}
+
+
+/* review */
+.container > .title2 { 
+    width:100%; 
+    margin:60px 0 0 0; padding-top:100px; 
+    background-color:#eee; 
+}
+.container > .review { 
+    background-color:#eee; 
+    padding:55px 0 100px 0;
+}
+.container > .review > h2 { padding:70px; }
+.container > .review > div {
+    background-color:#fff; 
+    width:90%; margin:25px auto;
+    padding-bottom:3px; }
+.container > .review > div img { display:block; width:100%; max-width:100%; }
+.container > .review h3 { margin:0 0 15px 0; padding:0 10px; }
+.container > .review div p { font-size:13px; margin:10px 0; padding:0 10px; }
+
+/* sponsered */
+.container > .sponsered { 
+    display:flex; flex-wrap:wrap; 
+    justify-content:center;
+    align-items:center;
+    margin-bottom:100px;
+}
+.container > .sponsered div { 
+    width:170px; height:120px;
+    box-sizing:border-box;
+    border:1px solid #ddd;
+}
+.container > .sponsered div:nth-child(odd) { border-right:none; }
+
+.container > .sponsered div:nth-child(-n+6) { border-bottom:none; }
+
+.container > .sponsered div img {
+    display:block;
+    margin:40px auto;
+    max-width:75%; max-height:75%;
+}
+
+/* mainimage3 */
+.container > .mainimg3 {
+    position:relative;
+    background:url(images/fixedimage.jpg) right fixed;
+    width:100%; height:460px;
+ }
+ .container > .mainimg3 > h3 {
+    font-family:'Montserrat B';
+    font-size:25px;
+    text-align:center;
+    padding-top:60px;
+ }
+ .container > .mainimg3 .btn2 { 
+     list-style:none; 
+     margin:70px 0 0 0; padding:0; 
+     display:flex;
+     flex-direction:column;
+     justify-content:center;
+     align-items:center; 
+    }
+ .container > .mainimg3 li { margin:15px 0; }
+ .container > .mainimg3 li:nth-child(1) {
+    width:180px; height:60px;
+    border-radius:5px;
+    background-color:#222;
+ }
+ .container > .mainimg3 li:nth-child(1) a {
+    color:#fff; 
+    text-align:center;
+    text-transform:capitalize;
+    line-height:60px;
+}
+ .container > .mainimg3 li:nth-child(2) {
+    width:180px; height:60px;
+    border-radius:5px;
+    border:2px solid #222;
+    box-sizing:border-box;
+}
+ .container > .mainimg3 li:nth-child(2) a {
+    text-align:center;
+    text-transform:capitalize;
+    line-height:60px;
+}
+
+/* info */
+.container > .info { width:75%; margin:50px auto; }
+.container > .info > div {
+    display:flex;
+}
+.container > .info > div img {
+    display:block;
+    width:100%; max-width:45px;
+    max-height:45px;
+    margin:30px;
+}
+.container > .info section > h4 {
+    font-family:'Montserrat B';
+    font-size:12px;
+    margin-top:30px;
+}
+.container > .info section p {
+    font-family:'Montserrat M';
+    margin-bottom:30px;
+    font-size:17px;
+    color:#999;
+}
+.container > .info section a {
+    font-size:17px;
+    color:#999;
+}
+
+/*** footer ***/
+footer { background-color:#222; height:100px; }
+footer p {
+    text-align:center;
+    color:#999;
+    font-size:13px;
+    margin:0;
+    line-height:100px;
+}
+
+
+/***** PC (min-width:1440px)  *****/
+
+@media screen and (min-width:1440px) {
+
+    .container h2 { font-size:45px; }
+
+    /*** header  ***/
+    .container > header > h1 { margin-left:130px; }
+    .container > header > h2 { display:none; }
+
+    /* nav */
+    .container > header > .gnb {
+        display:flex;
+        padding:15px 0;
+        position:absolute;
+        top:0; left:290px;
+    }
+    .container > header > .gnb li { padding:0.416666% 3.333333% 0.416666% 0; }
+    .container > header > .gnb .log { margin-left:25vw; }
+    .container > header > .gnb li a { font-size:15px; }
+    .container > header > .gnb li a:hover { color:#bbdae4; }
+    
+    
+    /*** main  ***/
+
+    /* mainimage1 */
+    .container > .mainimg  {
+        height:655px;
+        background:url(images/main1.jpg) no-repeat center;
+    }
+    .container > .mainimg > h3 { font-size:60px; width:430px; top:120px }
+    .container > .mainimg > p { font-size:18px; }
+
+    .container > .mainimg > h3,
+    .container > .mainimg > p,
+    .container > .mainimg > .btn { left:150px; }
+
+    /* board */
+    .container > .board { flex-wrap:nowrap; justify-content:center; box-sizing:border-box; }
+    .container > .board > div { width:35%; margin:120px auto; }
+    .container > .board li { font-size:15px; }
+
+    /* mainimage2 */
+    .container > .mainimg2 {
+        height:700px;
+        background:url(images/main2.jpg) no-repeat;
+    }
+    .container > .mainimg2 > h3 { font-size:50px; margin:0; width:300px; top:100px; }
+    .container > .mainimg2 > p { width:300px; top:320px; font-size:15px; }
+    .container > .mainimg2 > .btn1 { top:520px; }
+
+    .container > .mainimg2 > h3,
+    .container > .mainimg2 p,
+    .container > .mainimg2 > .btn1 { left:60%; }
+
+    /* shop */
+    .container > .shop { 
+        width:100%;
+        margin-bottom:120px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .container > .shop div { margin:20px; }
+    .container > .shop img { display:block; max-width:100%; }
+
+    .container > .shop > .best {
+        width:970px; height:470px; 
+        background:url(images/best.jpg) no-repeat center;
+    }
+    .container > .shop > .best > h3 { font-size:40px; top:130px; left:465px; }
+    .container > .shop > .best > a { top:257px; left:465px; }
+
+    .container > .shop > .sale img, 
+    .container > .shop > .new img { max-width:470px; }
+
+    .container > .shop > .sale h3,
+    .container > .shop > .new h3 { top:345px; }
+
+    .container > .shop > .sale a,
+    .container > .shop > .new a { top:420px; }
+
+    .container > .shop > .pro {
+        width:970px; height:470px; 
+        background:url(images/project.jpg) no-repeat center;
+    }
+    .container > .shop > .pro h3 { top:345px; }
+    .container > .shop > .pro a { top:420px; }
+    
+    /* review */
+    .container > .review { 
+        display:flex; 
+        justify-content:center; 
+        align-items:center;
+    }
+    .container > .review > div { box-sizing:border-box; margin:0 20px; padding-bottom:0; }
+    .container > .review h3 { font-size:22px; }
+    .container > .review > .re2,
+    .container > .review > .re3 { display:block; }
+    .container > .review p { margin:30px 0 20px 0; font-size:15px; }
+
+    /* sponsered */
+    .container > .sponsered {
+        width:100%;
+        margin:120px auto;
+    }
+    .container > .sponsered div { width:20.833333%; padding-top:3px; }
+
+    .container > .sponsered div:nth-child(2) { border-right:none; }
+
+    .container > .sponsered div:nth-child(5) { border-bottom:1px solid #ddd; }
+    .container > .sponsered div:nth-child(6) { border-bottom:1px solid #ddd; border-right:none; }
+
+    .container > .sponsered div img { margin:25px auto; }
+
+    /* mainimage3 */
+    .container > .mainimg3 { 
+        width:100%; height:475px; 
+    }
+    .container > .mainimg3 > h3 {
+        font-size:50px;
+        margin:0;
+        padding-top:80px;
+    }
+    .container > .mainimg3 .btn2 { flex-direction:row; margin-top:78px; }
+    .container > .mainimg3 li { margin:20px 20px 0 0; }
+
+    /* info */
+    .container > .info { 
+        display:flex; 
+        justify-content:center;
+        align-items:center;
+    }
+
+    .container > .info > div { margin:0 50px; }
+    .container > .info > div img { margin:30px 20px 30px 0; }
+    .container > .info section p { font-size:18px; }
+
+    /*** footer ***/
+    footer p { font-size:17px; }
+}
