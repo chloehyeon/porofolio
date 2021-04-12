@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* 한글 */
+
+/* 'Noto Sans KR' */
+@font-face {
+    font-family:'Noto Sans KR';
+    src: url('fonts/Noto Sans KR Regular.woff2') format('worff2'), 
+    url('fonts/Noto Sans KR Regular.woff') format("woff");
+    font-weight:normal;
+    font-style:normal;
+}
+
+/* 영문 */
+
+/* 'Noto Sans' */
+@font-face{
+    font-family:'Noto Sans';
+    src: url('fonts/Noto Sans.woff2') format('worff2'), 
+    url('fonts/Noto Sans.woff') format("woff");
+    font-weight:normal;
+    font-style:normal;
+}
+
+/* 'Anton R' */
+@font-face {
+    font-family:'Anton R';
+    src: url('fonts/Anton-Regular.woff2') format('worff2'), 
+    url('fonts/Anton-Regular.woff') format("woff");
+    font-weight:normal;
+    font-style:normal;
+}
+
+/* 'Baloo2 B' */
+@font-face {
+    font-family:'Baloo2 B';
+    src: url('fonts/Baloo2\ Bold.woff2') format('worff2'), 
+    url('fonts/Baloo2\ Bold.woff') format("woff");
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+/* 'Barlow Condensed B' */
+@font-face {
+    font-family:'Barlow Condensed B';
+    src: url('fonts/BarlowCondensed-Bold.woff2') format('worff2'), 
+    url('fonts/BarlowCondensed-Bold.woff') format("woff");
+    font-weight:normal;
+    font-style:normal;
+}
+
+
