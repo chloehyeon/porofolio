@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RICHEMONT BAKERY</title>
+    <!-- og -->
+    <meta property="og:title" content="RICHEMONT BAKERY">
+    <meta property="og:url" content="http://ihyeon.dothome.co.kr/richemont/m_index.html">
+    <meta property="og:image" content="#">
+    <meta property="og:description" content="RICHEMONT BAKERY 홈페이지 입니다.">
+    <meta property="type" content="website">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="common/favicon/favicon.png" type="image/x-icon">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="common/normalize.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Serif+KR:wght@400;700&family=Noto+Serif+SC:wght@300&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 내가 작성한 css -->
+    <link rel="stylesheet" href="m_index.css">
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <header>
+            <div class="icon"><a href="#"><img src="icon/user.svg" alt="user"></a></div>
+            <div class="logo"><a href="m_index.html"><img src="images/logo.png" alt="logo"></a></div>
+            <div class="menu"><a href="#"><img src="icon/menu.svg" alt="menu"></a></div>
+        </header>
+        <!-- nav -->
+        <ul class="gnb">
+            <div class="close"><a href="#"><img src="icon/close.svg" alt="close"></a></div>
+            <div class="title">
+                <p class="r">R</p>
+                <p class="c">C</p>
+                <p class="h">H</p>
+                <p class="m">M</p>
+                <p class="t">T</p>
+            </div>
+            <div class="list">
+                <li class="about"><a href="#">ABOUT</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">BAKERY</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">SERVICE</a></li>
+            </div>
+        </ul>       
+
+        <!-- Main (swiper js)-->
+        <div class="swiper-container main_list">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="main1"><img src="images/m_bread1.jpg" alt="trust richemont">
+                        <h2>Trust RICHEMONT</h2>
+                        <p class="box1">믿고 먹을 수 있는 신뢰의 맛이 살아있는 빵을</p>
+                        <p class="box2">만들기 위해 한시도 어긋남이 없이</p>
+                        <p class="box3">최선의 노력을 해왔습니다.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="main2"><img src="images/m_bread2.jpg" alt="richemont academy">
+                        <h2>RICHEMONT Academy</h2>
+                        <p class="box1">리치몬드제과기술학원은 강사진의 실무경험과</p>
+                        <p class="box2">노하우를 살린 전문강의를 통해 당신의 꿈을</p>
+                        <p class="box3">실현합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Best product (swiper js) -->
+        <h3 class="best">BEST</h3>
+        <div class="swiper-container pro_list">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" >
+                    <div class="best1">
+                        <a href="#"><img src="images/best1.png" alt="까만식빵"></a>
+                        <p class="best_title"><a href="#">까만식빵</a></p>
+                        <p>#squidink #담백함</p>
+                        <p>#cranberry #오징어먹물식빵</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" >
+                    <div class="best2">
+                        <a href="#"><img src="images/best2.png" alt="피데"></a>
+                        <p class="best_title"><a href="#">피데 (4종)</a></p>
+                        <p>#고르곤졸라 #토마토피데</p>
+                        <p>#어니언피데 #소세지피데</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" >
+                    <div class="best3">
+                        <a href="#"><img src="images/best5.png" alt="크라프트 콘브로트"></a>
+                        <p class="best_title"><a href="#">크라프트 콘브로트</a></p>
+                        <p>#유럽빵 #퀴리</p>
+                        <p>#호밀빵 #건강빵</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" >
+                    <div class="best4">
+                        <a href="#"><img src="images/best6.png" alt="브로첸"></a>
+                        <p class="best_title"><a href="#">브로첸</a></p>
+                        <p>#브로첸빵 #로스트비프</p>
+                        <p>#샌드위치 #아침식사대용</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" >
+                    <div class="best5">
+                        <a href="#"><img src="images/best3.png" alt="딸기 생크림 케이크"></a>
+                        <p class="best_title"><a href="#">딸기 생크림 케이크</a></p>
+                        <p>#신선한생크림 #strawberry</p>
+                        <p>#딸기무스 #시그니처케이크</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" >
+                    <div class="best6">
+                        <a href="#"><img src="images/best4.png" alt="그린티 바움쿠헨"></a>
+                        <p class="best_title"><a href="#">그린티 바움쿠헨</a></p>
+                        <p>#독일전통케익 #greentea</p>
+                        <p>#그린티 #선물용</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" >
+                    <div class="best7">
+                        <a href="#"><img src="images/best7.png" alt="샤를로트 쇼콜라"></a>
+                        <p class="best_title"><a href="#">샤를로트 쇼콜라</a></p>
+                        <p>#파베초콜릿 #수제초콜릿</p>
+                        <p>#달콤함 #초코케이크</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" >
+                    <div class="best8">
+                        <a href="#"><img src="images/best8.png" alt="링마이 아로니아"></a>
+                        <p class="best_title"><a href="#">링마이 아로니아</a></p>
+                        <p>#아로니아듬뿍 #바삭한빵</p>
+                        <p>#건강빵 #달콤한빵</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Season event -->
+        <div class="event_wrap">
+            <div class="season">
+                <h3>시즌한정제품</h3>
+                <img src="images/season.jpeg" alt="시즌메뉴 갈레트">
+                <h4><a href="#">왕의 갈레트 / GALETTE DES ROIS</a></h4>
+                <p class="event_title">왕의 갈레트라는 뜻의 "갈레트 데 루아"는</p>
+                <p>프랑스의 대표적인 파이입니다.</p>
+                <p>오직 이 시즌에만 만나 볼 수 있는</p>
+                <p>디저트를 즐겨보세요!</p>
+            </div>
+
+            <div class="event">
+                <h3>EVENT</h3>
+                <img src="images/event.jpg" alt="독일 명장 부머와의 만남">
+                <h4><a href="#">독일 마에스트로</a></h4>
+                <p class="event1"><a href="#">Friedrich Boehmer 무료 시식회</a></p>
+                <p class="event_title">2021년 5월 6일 오후 2시 성산본점</p>
+                <p>독일 최고의 명장 부머씨와의 특별한 만남을
+                <p>놓치지 마세요!</p>
+            </div>
+        </div>
+        
+        <!-- Store -->
+        <div class="store_wrap">
+            <h3 class="store">STORE</h3>
+            <p class="intro">리치몬드 제과점의 매장을 소개합니다.</p>
+            <div class="store1">
+                <img src="images/store1.jpg" alt="성산본점">
+                <div class="box1">
+                    <h4>성산본점</h4>
+                    <p class="intro1">1979년에 창업한 리치몬드 본점입니다.</p>
+                    <p><span>주소 :</span> 서울특별시 마포구 성산1동 월드컵북로 86</p>
+                    <p><span>연락처 :</span> 02-3250-0221</p>
+                    <p><span>영업시간 :</span> 매일 08:00 ~ 22:00</p>
+                </div>
+            </div>
+
+            <div class="store2">
+                <img src="images/store2.jpg" alt="더현대서울점">
+                <div class="box2">
+                    <h4>더현대서울점</h4>
+                    <p class="intro2">2021년 2월 26일에 오픈한 신규점포입니다.</p>
+                    <p><span>주소 :</span> 서울특별시 영등포구 여의동 여의대로 108</p>
+                    <p><span>연락처 :</span> 02-3277-0798</p>
+                    <p><span>영업시간 :</span> 매일 10:30 ~ 20:00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="mastermark">
+                <img src="images/mastermark.png" alt="대한민국 기능장" class="master">
+            </div>
+            <div class="footer_wrap">
+                <p>상호: 리치몬드 제과점</p>
+                <p>대표이사: 권형준</p>
+                <p>TEL : 02-3250-0221  / Office : 02-3142-7494</p>
+                <p>주소: 서울특별시 마포구 월드컵북로 86 리치몬드 빌딩</p>
+            </div>
+            <p class="copy">Copyright © 2021 I.HYEON All rights reserved.</p>
+        </footer>    
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 내가 작성한 js -->
+    <script src="m_index.js"></script>
+</body>
+</html>
