@@ -62,7 +62,7 @@ p { margin:10px 0; }
 .container .title .m { top:140px; left:147px; }
 .container .title .t { top:200px; left:120px; }
 
-.container .gnb .list { position:absolute; top:400px; left:110px;  }
+.container .gnb .list { position:absolute; top:350px; left:110px;  }
 .container .gnb .list a {
     font-family:'Noto Serif', serif;
     font-size:18px;
