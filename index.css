@@ -1,0 +1,328 @@
+@charset "utf-8";
+
+/* common */
+body { 
+    background-color:#f6f2f1;
+    font-family:'Noto Sans KR', 'Noto Sans', 'Anton R', 'Baloo2 B', 'Barlow Condensed B', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;
+}
+.container { 
+    overflow:hidden;
+    width:96%; margin:20px auto 0 auto; 
+    border:2px solid #000; 
+}
+a { display:block; text-decoration:none; color:#000; }
+img { vertical-align:top; }
+ul { list-style:none; margin:0; padding:0; }
+h2 { 
+    font-size:35px; 
+    font-family:'Anton R'; text-transform:uppercase; 
+    margin-top:65px; 
+}
+p { margin:0; }
+
+
+/***** 기본 mobile (375px 기준) *****/
+
+.txt { display:none; }
+
+/**** header ****/
+.container > header {
+    padding:22px 0;
+    border-bottom:2px solid #000;
+    position:relative;
+}
+.container nav { width:100%; height:100vh; background-color:#f6f2f1; position: fixed; top:0; left:0; z-index:99; padding:20px; box-sizing:border-box; display:none; position:fixed; }
+.container nav .web_btn { display:flex; flex-direction:column; border:2px solid #000; padding:20px; height:80%; }
+.container nav.on + a#menu::after { background: url(icon/close.svg) no-repeat 50%/cover; }
+.container nav li a { font-family:'Anton R'; font-size:30px; text-transform:uppercase; margin-top:50px; margin-left:10px; }
+.container a#menu { display:block; text-indent: -9999px; position:relative; z-index:999;}
+.container a#menu::after {
+    content:"";
+    background: url(icon/menu.svg) no-repeat 50%/cover;
+    width:20px; height:20px;
+    display:inline-block;
+    position:absolute;
+    right:30px; top:13px;
+    margin-top:-15px
+}
+
+/**** main ****/
+/* video */
+.container .video_wrap {
+    text-indent:-9999px;
+    width:100%;
+    height:60vh;
+}
+/* marquee */
+.container > .marquee { height:12vh; border-bottom:2px solid #000; }
+.container > .marquee p { font-family:'Anton R'; font-size:50px; line-height:12vh; }
+.container > .marquee span { 
+    color:#f6f2f1; 
+    -webkit-text-stroke: 1px #000; 
+}
+
+/* about me */
+.container .about {
+    padding-bottom:70px;
+    border-bottom:2px solid #000;
+    position:relative;
+}
+.container .about > * { margin-left:40px; }
+.container > .profile .about svg { position:absolute; top:-20px; right:30px; }
+.containe .about h2 { margin-left:25px;}
+.container .about h3 { 
+    font-size:20px; font-weight:bold; 
+    margin-top:65px;
+}
+.container .about h4 {
+    margin-top:154px; font-size:14px;
+}
+.container .about > p { font-size:15px; }
+.container .about > p:nth-of-type(2) { margin-top:25px; font-weight:bold; }
+.container .about > p:nth-of-type(3) { font-weight:bold; }
+
+.container .about > h4 { margin-top:120px; font-size:14px; font-weight:bold; }
+.container .about > .qual { margin-top:3px; font-size:14px; }
+
+/* carrer */
+.container .carrer {
+    padding-bottom:65px;
+    border-bottom:2px solid #000;
+}
+.container .carrer * {
+    margin-left:40px;
+}
+.container .carrer h2 { margin-top:80px; font-size:25px; }
+.container .carrer p { font-size:15px; width:70.666666% }
+.container .carrer > p:nth-child(even) { margin-top:20px; }
+.container .carrer > p:nth-child(odd) { margin-top:5px; }
+.container .carrer p:nth-of-type(1) { margin-top:65px; }
+.container .carrer .bold { font-weight:bold; }
+
+/* skill */
+.container > .skill { border-bottom:2px solid #000; }
+.container > .skill h2 { text-align:center; }
+.container .skill section { text-align:center; margin:80px 0; }
+.container .skill section img { width:50px;}
+.container .skill section h4 { font-family:'Anton R'; font-size:20px; text-transform:uppercase; margin:10px 0; }
+.container .skill section .bold { font-weight:bold; margin-top:20px; }
+.container .skill section p { margin:5px 0; }
+.container .skill section p:nth-of-type(2) { width:250px; margin:0 auto; margin-top:15px; }
+
+/* works */
+.container > .works { padding-bottom:50px; }
+.container > .works h2 { text-align:center; }
+.container > .works > .ct > div > div { 
+    width:315px; height:290px;
+    background-color:#ddd;
+    margin:25px auto;
+    border:1px solid #000;
+    text-align:center; font-weight:bold;
+}
+.container > .works > .ct > .ctbox1 .absolut { margin-top:65px; }
+.container > .works > .ct > .ctbox1 .absolut a { background:url(images/work_mab.jpg) no-repeat 0% 0%/cover; height:176px; }
+.container > .works > .ct > .ctbox1 .uiux a { background:url(images/uiuximg.jpg) no-repeat 0% 0%/cover; height:176px; }
+.container > .works > .ct > .ctbox2 .nug a { background:url(images/work_mnug.jpg) no-repeat 0% 0%/cover; height:176px; }
+.container > .works > .ct > .ctbox3 .richemont a { background:url(images/work_mri.jpg) no-repeat 0% 0%/cover; height:176px; }
+.container > .works > .ct > .ctbox3 .prepare a { background:url(images/m_preparing.jpg) no-repeat 0% 0%/cover; height:176px; }
+.container > .works > .ct > div div .box { 
+    background-color:#000; color:#fff; 
+    padding:8px 0;
+    font-size:14px; 
+    letter-spacing:1px;
+    font-weight:normal;
+}
+.container > .works > .ct p { margin:10px 0; }
+.container > .works > .ct p.pf1 { font-family:'Barlow Condensed B'; color:#d12e2e; font-size:21px;}
+.container > .works > .ct p.pf2 { color:#008000; font-size:21px; }
+.container > .works > .ct p.pf3 { font-family:'Baloo2 B'; color:#bbdae4; font-size:21px; }
+.container > .works > .ct p.pf4 { font-family:'Noto Serif', serif; color:#ddd7cb;  font-size:21px; }
+.container > .works > .ct p.pf5 { font-size:21px; }
+.container > .works > .ct > div > div .box .anton { font-family:'Anton R'; font-size:14px; text-transform:uppercase; }
+.container > .works .top { display:none; }
+
+/**** footer ****/
+.container footer {
+    background-color:#000;
+    font-family:'Anton R';
+    text-align:center;
+    color:#fff;
+    padding-bottom:55px;
+}
+.container footer > h4 { 
+    padding:60px 0 40px 0;
+    font-size:17px;
+    text-transform:uppercase; 
+}
+.container footer > p { font-size:12px; }
+.container footer > p:nth-of-type(2) { margin:5px 0; }
+.container footer > p:nth-of-type(2) a { display:initial; color:#fff; }
+.container footer > p:nth-of-type(3) { margin-top:30px;}
+.container footer .line { display:none; }
+
+
+
+
+
+
+
+/***** pc (min width 1200px) *****/
+
+@media screen and (min-width:1200px) {
+    /* common */
+    html { scroll-behavior:smooth; }
+    body { position:relative; }
+    .txt {
+        display:block;
+        font-family:'Anton R';
+        writing-mode: vertical-rl;
+        position:fixed;
+        top:50%; left:10px;
+    }
+    h2 { font-size:42px; margin-top:60px; }
+    .container { 
+        width:94%; margin:30px auto 0 auto;
+        border:6px solid #000;
+        position:relative;
+    }
+
+    /**** header ****/
+    .container > header { border-bottom:6px solid #000; padding:0; }
+    .container > header > .menu { display:none; }
+    .container > header ul { 
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:0;
+    }
+    .container > header li { margin:0 5.752212%;}
+    .container > header li a {
+        font-family:'Anton R';
+        text-transform:uppercase;
+        width:70px;
+        font-size:18px;
+        margin:0;
+    }
+    .container > header li a:hover { color:#00917c; }
+
+    .container nav { display: block; background-color:transparent; position: static;padding:10px 20px; height: auto; }
+    .container nav .web_btn { border: none; }
+    .container nav .web_btn { justify-content: space-around; flex-direction: row;}
+    .container a#menu { display:none }
+
+    /* video */
+    .container .video_wrap {
+        height:80vh;
+    }
+
+    /**** main ****/
+    .container > .marquee { height:250px; border-bottom:6px solid #000; }
+    .container > .marquee p { font-size:150px; margin:60px 0; }
+    .container > .marquee span {
+        -webkit-text-stroke: 2px #000;
+    }
+
+    .container > .profile {
+        width:100%;
+        display:flex; 
+        border-bottom:6px solid #000; 
+    }
+
+    /* about me */
+    .container .about {
+        width:60%;
+        border-right:2px solid #000;
+        border-bottom:none;
+        position:relative;
+    }
+    .container > .profile .about > * { margin-left:123px; }
+    .container > .profile .about svg { position:absolute; top:40px; right:100px; }
+    .container > .profile .about > h2 { margin-left:80px; }
+    .container > .profile .about > h3 { margin-top:70px; font-size:23px; }
+    .container > .profile .about p { font-size:17px; }
+
+    .container > .profile h4 { margin-top:115px; font-size:14px; }
+    /* carrer */
+    .container .carrer { width:40%; border-bottom:none; }
+    .container .carrer > * { margin-left:50px; }
+
+    /* skill */
+    .container > .skill { border-bottom:6px solid #000; }
+    .container .skill .tool { 
+        display:flex; 
+        justify-content:center;
+        align-items:center;
+    }
+    .container .skill section { 
+        margin:100px 0 225px 0;
+        padding:0 5%;
+        border-right:1px solid #000;
+    }
+    .container .skill section:last-child { border-right:none; }
+    .container .skill section h4 { font-size:22px; }
+    .container .skill section img { width:70px; }
+
+    /* works */
+    .container .works { position:relative; }
+    .container .works .ct {
+        display:flex; 
+        justify-content: center;
+    }
+    .container > .works > .ct > .ctbox1 div:first-child,
+    .container > .works > .ct > .ctbox3 div:first-child { margin-top:0; }
+    .container > .works > .ct > div > div { 
+        width:320px; height:585px;
+        margin:25px;
+    }
+    .container > .works > .ct > div > div a:hover { background-color:#000; opacity:0.6; transition:0.3s; }
+    .container > .works > .ct > .ctbox1 .absolut a { background:url(images/ab_guide.jpg) 0% 0%/cover; height:470px;}
+    .container > .works > .ct > .ctbox1 .uiux a { background:url(images/uiuxguide.jpg) 0% 0%/cover; height:470px;}
+    .container > .works > .ct > .ctbox2 .nug a { background:url(images/nug_guide.jpg) 0% 0%/cover; height:470px;}
+    .container > .works > .ct > .ctbox2 > div { margin:150px 0 0 0; }
+    .container > .works > .ct > .ctbox3 .richemont a { background:url(images/ri_guide.jpg) 0% 0%/cover; height:470px;}
+    .container > .works > .ct > .ctbox3 .prepare a { background:url(images/preparing.jpg) 0% 0%/cover; height:470px;}
+    .container > .works > .ct p { margin:10px 0; font-size:15px; }
+    .container > .works > .ct p.pf_title { font-size:25px; }
+    .container > .works > .ct > div div .box { 
+        background-color:#000; color:#fff; 
+        padding:7px 0;
+        font-size:20px; 
+        letter-spacing:1px;
+        font-weight:normal;
+    }
+
+    .container > .works .top {
+        display:block;
+        position:fixed;
+        right:80px; bottom:30px;
+        width:40px; padding-bottom:2px;
+        border-bottom:6px solid #00917c;
+    }
+    .container > .works .top a {
+        font-family:'Anton R'; 
+        font-size:25px;
+        text-align:center;
+        text-transform:uppercase;
+        color:#00917c;
+    }
+
+    /**** footer ****/
+    .container footer {
+        text-align:initial;
+    }
+    .container footer > * { margin-left:100px; }
+    .container footer > h4 { padding-bottom:10px; font-size:16px; }
+    .container footer > p:nth-of-type(2) { margin-left:100px; }
+    .container footer > p:nth-of-type(3) {
+        padding-top:35px;
+        margin-top:35px;
+    }
+    .container footer .line { 
+        display:block;
+        width:90%;
+        margin:0 auto;
+        border-top:1px solid #999; 
+        font-size:0;
+    }
+    .container footer > p:nth-of-type(4) { font-size:16px; }
+}
